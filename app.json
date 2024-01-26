@@ -3,6 +3,7 @@
     "name": "coba-pertama-kali-react-native",
     "slug": "coba-pertama-kali-react-native",
     "version": "1.0.0",
+    "scheme": "coba-pertama-kali-react-native",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",

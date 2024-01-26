@@ -5,7 +5,8 @@ import AoyamaYugaScreen from '../Screen/AoyamaYugaScreen';
 import { Text } from 'react-native';
 // import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Entypo } from '@expo/vector-icons';
-
+import { FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome6 } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 
@@ -20,15 +21,43 @@ export default function Navigate() {
       <Tab.Screen name="Home" component={SukunaScreen} 
       options={{
         tabBarLabel:({color})=>(
-          <Text style={{color:color,fontSize:12,marginTop:-1}}>Home</Text>
+          <Text style={{color:color,fontSize:12,marginTop:-1}}>Banyuwangi</Text>
         ),
         tabBarIcon:({color,size})=>(
-          <Entypo name="home" size={24} color="black" />
-          // <FontAwesome name='home' size={24} color={color}/>
+          <FontAwesome5 name="umbrella-beach" size={24} color="black" />
         )
       }}
       />
-      <Tab.Screen name="Settings" component={AoyamaYugaScreen} />
+      <Tab.Screen name="Jahudi" component={AoyamaYugaScreen} 
+      options={{
+        tabBarLabel:({color})=>(
+          <Text style={{color:color,fontSize:12,marginTop:-1}}>Jahudi</Text>
+        ),
+        tabBarIcon:({color,size})=>(
+          <FontAwesome5 name="star-of-david" size={24} color="black" />
+        )
+      }}
+      />
+      <Tab.Screen name="islam" component={AoyamaYugaScreen} 
+      options={{
+        tabBarLabel:({color})=>(
+          <Text style={{color:color,fontSize:12,marginTop:-1}}>Islam</Text>
+        ),
+        tabBarIcon:({color,size})=>(
+          <FontAwesome6 name="star-and-crescent" size={24} color="black" />
+        )
+      }}
+      />
+      <Tab.Screen name="toilet" component={AoyamaYugaScreen} 
+      options={{
+        tabBarLabel:({color})=>(
+          <Text style={{color:color,fontSize:12,marginTop:-1}}>Toilet</Text>
+        ),
+        tabBarIcon:({color,size})=>(
+          <FontAwesome5 name="toilet" size={24} color="black" />
+        )
+      }}
+      />
     </Tab.Navigator>
   )
 }

@@ -1,10 +1,20 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Text, View,StyleSheet } from 'react-native'
 
 export default function AoyamaYugaScreen() {
   return (
     <View>
-      <Text>halo aoyama yuga</Text>
+      <Text style={styles.menggantengkanDiri}>halo aoyama yuga</Text>
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  menggantengkanDiri: {
+    marginTop:"50%",
+    alignItems:"center",
+    textAlign:"center",
+    backgroundColor: 'black',
+    color:"white"
+  }
+});

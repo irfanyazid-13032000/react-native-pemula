@@ -3,10 +3,10 @@ import SukunaScreen from '../Screen/SukunaScreen';
 
 import AoyamaYugaScreen from '../Screen/AoyamaYugaScreen';
 import { Text } from 'react-native';
-// import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Entypo } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { FontAwesome6 } from '@expo/vector-icons';
+import Slider from '../Component/Slider';
 
 const Tab = createBottomTabNavigator();
 
@@ -28,7 +28,7 @@ export default function Navigate() {
         )
       }}
       />
-      <Tab.Screen name="Jahudi" component={AoyamaYugaScreen} 
+      <Tab.Screen name="Jahudi" component={Slider} 
       options={{
         tabBarLabel:({color})=>(
           <Text style={{color:color,fontSize:12,marginTop:-1}}>Jahudi</Text>

@@ -5,12 +5,12 @@
     "version": "1.0.0",
     "scheme": "coba-pertama-kali-react-native",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/freyaku.jpeg",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/freyaku.jpeg",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#7F00FF"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -21,11 +21,14 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "black"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }

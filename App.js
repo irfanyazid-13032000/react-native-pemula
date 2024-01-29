@@ -6,6 +6,7 @@ import { ClerkProvider,SignedIn,SignedOut, useOAuth } from "@clerk/clerk-expo";
 import * as SecureStore from "expo-secure-store";
 import Navigate from './App/Navigation/Navigate';
 import { NavigationContainer } from '@react-navigation/native';
+import Header from './App/Screen/Header';
 
 export default function App() {
 
@@ -53,6 +54,7 @@ const SignOut = () => {
         <SignedIn>
           {/* <SukunaScreen/> */}
           {/* <SignOut/> */}
+          <Header/>
           <NavigationContainer>
           <Navigate/>
           </NavigationContainer>
@@ -69,6 +71,6 @@ const SignOut = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#3F3B6C',
+    backgroundColor: 'black',
   }
 });
